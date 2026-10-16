@@ -1,0 +1,69 @@
+{
+    "hotel": {
+        "id": "HTL001",
+        "name": "Demo Grand Hotel"
+    },
+    "guests": [
+        {
+            "id": "G001",
+            "name": "Rahul Sharma",
+            "email": "rahul@example.com",
+            "phone": "9000000001"
+        },
+        {
+            "id": "G002",
+            "name": "Priya Sen",
+            "email": "priya@example.com",
+            "phone": "9000000002"
+        }
+    ],
+    "rooms": [
+        {
+            "number": "101",
+            "type": "Deluxe",
+            "status": "occupied",
+            "housekeeping_status": "clean"
+        },
+        {
+            "number": "102",
+            "type": "Suite",
+            "status": "vacant",
+            "housekeeping_status": "dirty"
+        }
+    ],
+    "reservations": [
+        {
+            "id": "RES001",
+            "guest_id": "G001",
+            "room_number": "101",
+            "check_in": "2026-10-14",
+            "check_out": "2026-10-17",
+            "status": "checked_in"
+        },
+        {
+            "id": "RES002",
+            "guest_id": "G002",
+            "room_number": "102",
+            "check_in": "2026-10-18",
+            "check_out": "2026-10-20",
+            "status": "confirmed"
+        }
+    ],
+    "folios": [
+        {
+            "id": "F001",
+            "reservation_id": "RES001",
+            "currency": "INR",
+            "charges": [
+                {
+                    "description": "Room charge",
+                    "amount": 4500
+                },
+                {
+                    "description": "Restaurant",
+                    "amount": 850
+                }
+            ]
+        }
+    ]
+}

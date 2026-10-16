@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IDS Next Integration Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Hotel Integration Dashboard</h1>
+        <p>IDS Next PMS — Simulation Mode</p>
+
+        <div class="actions">
+            <button onclick="loadData('reservations')">Reservations</button>
+            <button onclick="loadData('guests')">Guests</button>
+            <button onclick="loadData('rooms')">Rooms</button>
+            <button onclick="loadData('folios')">Folios</button>
+            <button onclick="syncReservations()">Sync Reservations</button>
+        </div>
+
+        <h2>API Response</h2>
+        <pre id="output">Select an option above.</pre>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
